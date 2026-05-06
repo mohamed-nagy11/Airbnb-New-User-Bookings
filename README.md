@@ -30,7 +30,7 @@ The raw session logs contained millions of rows of isolated clickstream events. 
 ### 4. Navigating Multicollinearity
 I utilized **Cramér's V** to evaluate correlations between high-cardinality categorical variables. The heatmap revealed massive overlaps in information (e.g., strong correlations between `first_browser`, `signup_app`, and `first_device_type`). This discovery heavily influenced the choice of algorithms.
 
-## ⚙️ Methodology & Model Selection
+## Methodology & Model Selection
 
 ### Why Tree-Based Models?
 Linear models (Logistic Regression) and distance-based models (KNN, SVM) were explicitly rejected for this pipeline in favor of Gradient Boosted Decision Trees (GBDT). 
